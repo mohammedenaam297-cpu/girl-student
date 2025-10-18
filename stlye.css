@@ -1,0 +1,59 @@
+/*
+هذا الكود يحدد الألوان والتنسيق الأساسي للصفحة
+(الخلفية السوداء، الأزرار الخضراء، والنص الأبيض).
+*/
+
+/* 1. التنسيق العام والخطوط والخلفية */
+body {
+    direction: rtl;            /* تحديد اتجاه النص من اليمين لليسار */
+    text-align: right;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* اللون الأسود للخلفية */
+    color: white;              /* اللون الأبيض للنصوص الأساسية */
+    min-height: 100vh;
+}
+
+/* 2. تنسيق الأزرار المشتركة (تبرع الآن، تطوع معنا) */
+.btn {
+    padding: 15px 25px;
+    border-radius: 8px; /* حواف دائرية للأزرار */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    display: block; /* لجعل الزر يملأ العرض المتاح له */
+    transition: background-color 0.3s, opacity 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+/* 3. تنسيق زر "تبرع الآن" (الأخضر) */
+.main-donate-btn {
+    background-color: #1A7D4A; /* لون أخضر داكن بارز */
+    color: white;
+}
+
+/* 4. تنسيق زر "تطوع معنا" (الأسود/الرمادي الداكن) */
+.volunteer-btn {
+    background-color: #333333; /* لون رمادي داكن للخلفية */
+    color: white;
+    margin-top: 15px;
+}
+
+/* 5. تنسيق الرسالة الداعمة (أدعم التمكين والاستدامة) */
+.support-message h2 {
+    color: #1A7D4A;             /* لون أخضر */
+    border: 1px solid #1A7D4A;  /* إطار أخضر حول النص */
+    padding: 8px 15px;
+    display: inline-block;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+/* 6. تأثير التحويم (عند مرور الماوس) */
+.btn:hover {
+    opacity: 0.9; /* تخفيف اللون قليلاً عند المرور بالماوس */
+}
